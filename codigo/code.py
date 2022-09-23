@@ -62,7 +62,7 @@ class Generadorlista:
         if n!=condicion:
             lista1.append(n)
             n+=sumatorio
-            Generadorlista.generarnumero(n)
+            Generadorlista.generarnumero(n, lista1, condicion, sumatorio)
         else:
             print(lista1)
 
