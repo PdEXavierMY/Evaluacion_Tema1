@@ -1,4 +1,5 @@
 from codigo.code import Matriz, Cadenatexto, Generadorlista, ScriptTabla, Codewars
+import sys
 
 def separador():
     print("--------------------------------------------------------")
@@ -41,6 +42,7 @@ def solicitar_introducir_numero_extremo2(invite, minimum=0, maximum=100):
             print("Solo están autorizados los caracteres [1-9].")
 
 def ejecutar():
+    print("Estos son los ejercicios resueltos de forma iterativa(no los iba a borrar).\n")
     matriz = Matriz([[1,1,1,3],[2,2,2,7],[3,3,3,9],[4,4,4,13]]).matriz
     Matriz.condicionmatriz(matriz)
     separador()
@@ -65,3 +67,5 @@ def ejecutar2():
     elif eleccion == 5:
         lista = Codewars.string_to_array(input("Introduce una cadena de texto: "))
         print(lista)
+    elif eleccion == 1:
+        Matriz.construirmatriz()
