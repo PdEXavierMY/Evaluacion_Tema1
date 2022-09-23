@@ -1,5 +1,5 @@
 from introducir import solicitar_introducir_numero_extremo
-from introducir.numero import solicitar_introducir_numero
+from introducir import solicitar_introducir_numero2
 
 class Matriz:
     def __init__(self, matriz):
@@ -28,7 +28,7 @@ class Matriz:
     def construirmatriz(matriz=[[], [], [], []], suma=0, i=0):
         if len(matriz[3]) < 3:
             if len(matriz[i]) < 3:
-                pregunta = int(input("Introduce un elemento de la matriz: "))
+                pregunta = int(solicitar_introducir_numero2("Introduce un elemento de la matriz: "))
                 matriz[i].append(pregunta)
                 suma+=pregunta
                 print(matriz)
