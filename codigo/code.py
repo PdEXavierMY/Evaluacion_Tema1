@@ -68,3 +68,12 @@ class ScriptTabla:
         for i in range(f):
             for i in range(c):
                 print(" * ", end='')
+        print(""); print("_________________________________")
+        print("Ahora la parte modificada para que salga una tabla de fxc")
+        print("_________________________________")
+        for i in range(f):
+            for i in range(c):
+                if i == c-1:
+                    print(" * ")
+                else:
+                    print(" * ", end='')
