@@ -1,5 +1,4 @@
-from lanzador import ejecutar, ejecutar2
+from lanzador import elegir
 
 if __name__ == "__main__":
-    ejecutar()
-    ejecutar2()
+    elegir()

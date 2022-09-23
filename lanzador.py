@@ -71,3 +71,14 @@ def ejecutar2():
         print(lista)
     elif eleccion == 1:
         Matriz.construirmatriz()
+    elif eleccion == 2:
+        texto = Cadenatexto(input("Introduce una cadena: ")).texto
+        comprobar = Cadenatexto.comprobarlonguitud(texto)
+        print(comprobar)
+
+    def elegir():
+        eleccion = eleccion = solicitar_introducir_numero_extremo2("¿Como quieres verlo, de forma iterativa(1), o de forma recursiva(2)?", 1, 2)
+        if eleccion == 1:
+            ejecutar()
+        elif eleccion == 2:
+            ejecutar2()
