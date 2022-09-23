@@ -1,6 +1,6 @@
 # EvaluacionT1
 
-En este [repositorio](https://github.com/Xavitheforce/EvaluacionT1) queda resuelto el ejercicio de la Tarea Inicial.
+En este [repositorio](https://github.com/Xavitheforce/EvaluacionT1) quedan resueltos los ejercicios de la evaluación del tema 1.
 
 El código empleado para resolver el ejercicio es el siguiente:
 ```python
