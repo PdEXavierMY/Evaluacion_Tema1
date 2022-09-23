@@ -4,7 +4,8 @@ En este [repositorio](https://github.com/Xavitheforce/EvaluacionT1) quedan resue
 
 El código empleado para resolver el ejercicio es el siguiente:
 ```python
-# Ejercicios 1-4
+# Ejercicios 1-4 y Codewars
+
 from introducir import solicitar_introducir_numero_extremo
 from introducir import solicitar_introducir_numero2
 
@@ -127,4 +128,5 @@ class Codewars:
 ```
 
 El ejercicio resuelto en Codewars queda así:
+
 ![Codewars string_array](https://user-images.githubusercontent.com/91721699/191981139-3ccd5425-ade3-4b09-a740-7af85687da55.png)
