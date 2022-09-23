@@ -1,8 +1,9 @@
+from cgitb import text
+
+
 class Matriz:
     def __init__(self, matriz):
         self.matriz = matriz
-
-    matriz = [[1,1,1,3],[2,2,2,7],[3,3,3,9],[4,4,4,13]]
 
     def condicionmatriz(lista):
         for elemento in lista:
@@ -23,3 +24,7 @@ class Matriz:
             for i in elemento:
                 sum+=int(i)
         return sum
+
+class Cadenatexto:
+    def __init__(self, texto):
+        self.texto = texto
