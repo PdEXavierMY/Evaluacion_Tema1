@@ -1,6 +1,3 @@
-from cgitb import text
-
-
 class Matriz:
     def __init__(self, matriz):
         self.matriz = matriz
@@ -36,3 +33,25 @@ class Cadenatexto:
         else:
             print("La cadena no está entre los 3 y 10 caracteres.")
             return False
+
+class Generadorlista:
+    def __init__(self) -> None:
+        pass
+
+    def generarlista():
+        lista1 = []
+        lista2 = []
+        lista3 = []
+        lista4 = []
+        lista5 = []
+        for i in range(11):
+            lista1.append(i)
+        for i in range(-10,1,1):
+            lista2.append(i)
+        for i in range(0,21,2):
+            lista3.append(i)
+        for i in range(-19,0,2):
+            lista4.append(i)
+        for i in range(0,51,5):
+            lista5.append(i)
+        return lista1, lista2, lista3, lista4, lista5
