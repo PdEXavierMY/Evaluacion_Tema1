@@ -5,8 +5,8 @@ En este [repositorio](https://github.com/Xavitheforce/EvaluacionT1) quedan resue
 El código empleado para resolver el ejercicio es el siguiente:
 ```python
 # Ejercicios 1-4
-
 from introducir import solicitar_introducir_numero_extremo
+from introducir import solicitar_introducir_numero2
 
 class Matriz:
     def __init__(self, matriz):
@@ -31,6 +31,29 @@ class Matriz:
             for i in elemento:
                 sum+=int(i)
         return sum
+
+    def construirmatriz(matriz=[[], [], [], []], suma=0, i=0):
+        if len(matriz[3]) < 3:
+            if len(matriz[i]) < 3:
+                pregunta = int(solicitar_introducir_numero2("Introduce un elemento de la matriz: "))
+                matriz[i].append(pregunta)
+                suma+=pregunta
+                print(matriz)
+                Matriz.construirmatriz(matriz, suma, i)
+            elif len(matriz[i]) == 3:
+                elemento4 = (matriz[i][0]+matriz[i][1]+matriz[i][2])
+                matriz[i].append(elemento4)
+                suma+=elemento4
+                print(matriz)
+                i+=1
+                Matriz.construirmatriz(matriz, suma, i)
+        else:
+            elemento4 = (matriz[i][0]+matriz[i][1]+matriz[i][2])
+            matriz[i].append(elemento4)
+            suma+=elemento4
+            print(matriz)
+            print(matriz)
+            print(f"La suma de los elementos de la matriz es {suma}")
 
 class Cadenatexto:
     def __init__(self, texto):
@@ -66,6 +89,15 @@ class Generadorlista:
             lista5.append(i)
         return lista1, lista2, lista3, lista4, lista5
 
+    def generarnumero(n, lista1, condicion, sumatorio):
+        if n!=condicion:
+            lista1.append(n)
+            n+=sumatorio
+            Generadorlista.generarnumero(n, lista1, condicion, sumatorio)
+        else:
+            print(lista1)
+
+
 class ScriptTabla:
     def __init__(self) -> None:
         pass
@@ -85,6 +117,13 @@ class ScriptTabla:
                     print(" * ")
                 else:
                     print(" * ", end='')
+
+class Codewars:
+    def string_to_array(s):
+        if s == '' or "":
+            return [""]
+        else:
+            return s.split()
 ```
 
 El ejercicio resuelto en Codewars queda así:
