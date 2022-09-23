@@ -1,4 +1,4 @@
-from code import Matriz, Cadenatexto, Generadorlista
+from code import Matriz, Cadenatexto, Generadorlista, ScriptTabla
 
 def separador():
     print("--------------------------------------------------------")
@@ -13,3 +13,4 @@ comprobar = Cadenatexto.comprobarlonguitud(texto)
 print(comprobar); separador()
 l1,l2,l3,l4,l5 = Generadorlista.generarlista()
 print(l1, l2, l3, l4, l5); separador()
+ScriptTabla.scripttabla()

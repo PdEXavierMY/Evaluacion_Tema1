@@ -1,3 +1,5 @@
+from introducir import solicitar_introducir_numero_extremo
+
 class Matriz:
     def __init__(self, matriz):
         self.matriz = matriz
@@ -55,3 +57,14 @@ class Generadorlista:
         for i in range(0,51,5):
             lista5.append(i)
         return lista1, lista2, lista3, lista4, lista5
+
+class ScriptTabla:
+    def __init__(self) -> None:
+        pass
+
+    def scripttabla():
+        f = solicitar_introducir_numero_extremo("Introduzca un argumento",1,9)
+        c = solicitar_introducir_numero_extremo("Introduzca otro argumento",1,9)
+        for i in range(f):
+            for i in range(c):
+                print(" * ", end='')
