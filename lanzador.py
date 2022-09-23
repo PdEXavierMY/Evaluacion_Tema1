@@ -1,5 +1,6 @@
 from codigo.code import Matriz, Cadenatexto, Generadorlista, ScriptTabla, Codewars
 import sys
+import time
 
 def separador():
     print("--------------------------------------------------------")
@@ -43,6 +44,7 @@ def solicitar_introducir_numero_extremo2(invite, minimum=0, maximum=100):
 
 def ejecutar():
     print("Estos son los ejercicios resueltos de forma iterativa(no los iba a borrar).\n")
+    time.sleep(2)
     matriz = Matriz([[1,1,1,3],[2,2,2,7],[3,3,3,9],[4,4,4,13]]).matriz
     Matriz.condicionmatriz(matriz)
     separador()
