@@ -86,3 +86,6 @@ class ScriptTabla:
                 else:
                     print(" * ", end='')
 ```
+
+El ejercicio resuelto en Codewars queda así:
+![Codewars string_array](https://user-images.githubusercontent.com/91721699/191981139-3ccd5425-ade3-4b09-a740-7af85687da55.png)
