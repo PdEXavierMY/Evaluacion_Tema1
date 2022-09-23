@@ -28,3 +28,11 @@ class Matriz:
 class Cadenatexto:
     def __init__(self, texto):
         self.texto = texto
+
+    def comprobarlonguitud(cadena):
+        if 3<= len(cadena) >= 10:
+            print("La cadena está entre 3 y 10 caracteres.")
+            return True
+        else:
+            print("La cadena no está entre los 3 y 10 caracteres.")
+            return False
