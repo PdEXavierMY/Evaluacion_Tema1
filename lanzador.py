@@ -75,10 +75,14 @@ def ejecutar2():
         texto = Cadenatexto(input("Introduce una cadena: ")).texto
         comprobar = Cadenatexto.comprobarlonguitud(texto)
         print(comprobar)
+    elif eleccion == 4: #mismo code
+        l1,l2,l3,l4,l5 = Generadorlista.generarlista()
+        print(l1, l2, l3, l4, l5); separador()
+        ScriptTabla.scripttabla()
 
-    def elegir():
-        eleccion = eleccion = solicitar_introducir_numero_extremo2("¿Como quieres verlo, de forma iterativa(1), o de forma recursiva(2)?", 1, 2)
-        if eleccion == 1:
-            ejecutar()
-        elif eleccion == 2:
-            ejecutar2()
+def elegir():
+    eleccion = eleccion = solicitar_introducir_numero_extremo2("¿Como quieres verlo, de forma iterativa(1), o de forma recursiva(2)?", 1, 2)
+    if eleccion == 1:
+        ejecutar()
+    elif eleccion == 2:
+        ejecutar2()

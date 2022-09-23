@@ -53,7 +53,7 @@ class Cadenatexto:
         self.texto = texto
 
     def comprobarlonguitud(cadena):
-        if 3<= len(cadena) >= 10:
+        if 3 <= len(cadena) <= 10:
             print("La cadena está entre 3 y 10 caracteres.")
             return True
         else:
