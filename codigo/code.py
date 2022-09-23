@@ -58,6 +58,15 @@ class Generadorlista:
             lista5.append(i)
         return lista1, lista2, lista3, lista4, lista5
 
+    def generarnumero(n, lista1, condicion, sumatorio):
+        if n!=condicion:
+            lista1.append(n)
+            n+=sumatorio
+            Generadorlista.generarnumero(n)
+        else:
+            print(lista1)
+
+
 class ScriptTabla:
     def __init__(self) -> None:
         pass
@@ -77,3 +86,10 @@ class ScriptTabla:
                     print(" * ")
                 else:
                     print(" * ", end='')
+
+class Codewars:
+    def string_to_array(s):
+        if s == '' or "":
+            return [""]
+        else:
+            return s.split()
